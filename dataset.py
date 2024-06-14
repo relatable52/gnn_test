@@ -75,10 +75,13 @@ def preprocess(config, mode='AF'):
 
     new_labels = np.zeros(labels.shape[0]).astype(int)
     marks = labels[:,1]!='unknown'
+    features = None
     if mode == 'AF':
         features = node_features[:,1:]
     elif mode == 'LF':
         features = node_features[:,1:95]
+    else:
+        raise NotImplementedError
     new_labels[labels[:,1]=='1']=1
 
     train_mask = (features[:,0]<=25)&marks
