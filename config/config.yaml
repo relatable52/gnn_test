@@ -1,1 +1,5 @@
 data_dir: /kaggle/input/elliptic-data-set/elliptic_bitcoin_dataset
+classes_path: /kaggle/input/elliptic-data-set/elliptic_bitcoin_dataset/elliptic_txs_classes.csv
+features_path: /kaggle/input/elliptic-data-set/elliptic_bitcoin_dataset/elliptic_txs_features.csv
+edges_path: /kaggle/input/elliptic-data-set/elliptic_bitcoin_dataset/elliptic_txs_edgelist.csv
+save_path: ./datasets/
