@@ -113,7 +113,7 @@ def get_args():
     parser = ArgumentParser()
     parser.add_argument("--config_path", type=str, default="./config/congfig.yaml")
     parser.add_argument("--mode", type=str, default='AL')
-    args = parser.parse_args
+    args = parser.parse_args()
     return args
 
 def main():
