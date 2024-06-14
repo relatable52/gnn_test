@@ -115,7 +115,7 @@ def preprocess(config, mode='AF'):
 def get_args():
     parser = ArgumentParser()
     parser.add_argument("--config_path", type=str, default="./config/config.yaml")
-    parser.add_argument("--mode", type=str, default='AL')
+    parser.add_argument("--mode", type=str, default='AF')
     args = parser.parse_args()
     return args
 
